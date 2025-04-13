@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(323, 80%, 90%);
+    background-image: url("./patinho.jpg");
+    background-size: contain;         /* Faz a imagem cobrir todo o fundo */
+    background-position: center;    /* Centraliza a imagem */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    background-color: #e731ba;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: fit-content; /* Faz o fundo acompanhar o tamanho do texto */
+    margin: 20px auto; 
+  }
+  
+  form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #e731ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
