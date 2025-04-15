@@ -1,14 +1,17 @@
+
+* {
+  box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: hsl(323, 80%, 90%);
     background-image: url("./patinho.jpg");
-    background-size: contain;         /* Faz a imagem cobrir todo o fundo */
-    background-position: center;    /* Centraliza a imagem */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;   
+    background-attachment: fixed;    
   }
   
   h1 {
