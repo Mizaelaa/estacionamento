@@ -2,32 +2,35 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
-    <link rel="stylesheet" href="style.css">
-    <title>Cadastro de veículo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastro de veículo</title>
 
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="navbar-left">
-                <a href="index.html" class="w3-xlarge" style="color: white; text-decoration: none;">
-                    <i class="fa fa-home"></i> Home
-                </a>
-            </div>
-        </div>
-    </header> 
+  <nav class="navbar">
+    <a href="index.html" class="nav-home">Home</a>
+    <div class="navbar-title">Estacionamento</div>
+    <div class="button-wrapper">
+      <button onclick="location.href='cadastro.html'" class="nav-button">Cadastro vaga</button>
+      <button onclick="location.href='VagasCadastradas.html'" class="nav-button">Vagas cadastradas</button>
+      <button onclick="location.href='vagasDisponiveis.html'" class="nav-button">Vagas disponíveis</button>
+    </div>
+  </nav>
 
-    <main>
-            <h1>Vagas Disponíveis</h1>
-            <article class="vaga-container" id="vagaContainer"></article>
-    </main>
+  <main>
+    <h1>Vagas Disponíveis</h1>
+    <article class="vaga-container" id="vagaContainer"></article>
+  </main>
 
-    <script src="script.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 Estacionamento. Todos os direitos reservados.</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>

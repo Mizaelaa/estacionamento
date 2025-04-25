@@ -1,152 +1,214 @@
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: hsl(323, 80%, 90%);
-    background-image: url("./servico-de-estacionamento.jpg");
-    background-size: cover;          
-    background-position: center;     
-    background-repeat: no-repeat;   
-    background-attachment: fixed;    
-  }
-  
-  h1 {
-    text-align: center;
-    color: white;
-    background-color: #565294;
-    padding: 10px 20px;
-    border-radius: 10px;
-    width: fit-content; /* Faz o fundo acompanhar o tamanho do texto */
-    margin: 20px auto; 
-  }
-  
-  form {
-    max-width: 400px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  input, button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  button {
-    background-color: #565294;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  header {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #fca311;
-  }
-  
-  .banner {
-    background: url('https://source.unsplash.com/1600x500/?technology') center/cover no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .sobre {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-  }
-  
-  footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-  }
-  
-  footer a {
-    color: #fca311;
-    text-decoration: none;
-  }
-  
-  /* TABELA DE VAGAS */
-#tabelaVagas {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #fff;
-  color: #000;
-  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(323, 80%, 90%);
+  background-image: url("./servico-de-estacionamento.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 80px;
+}
+
+h1 {
+  text-align: center; 
+  color: white;        
+  margin-top: 20px;   
+  margin-bottom: 20px; 
+  font-size: 35px;
+}
+
+
+form {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#tabelaVagas th, #tabelaVagas td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #ccc;
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
 }
 
-#tabelaVagas th {
-  background-color: #f0f0f0;
+button {
+  background-color: #565294;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F8B55F;
+  color: #000;
+}
+
+/* CAMPO DE PESQUISA */
+.pesquisa-container {
+  display: flex;
+  justify-content: center;    
+  margin: 30px auto;           
+}
+
+#campoBusca {
+  width: 1000px;               
+  padding: 8px 12px;         
+  font-size: 20px;             
+  border: 2px solid #ffffff;     
+  border-radius: 6px;          
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+}
+
+#campoBusca:focus {
+  border-color: #565294;      
+  outline: none;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-home {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
+  font-size: 25px;
+}
+
+.nav-home:hover {
+  color: #F8B55F;
+}
+
+.navbar-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  color: #565294;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  background-color: #565294;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-button:hover {
+  background-color: #F8B55F;
+}
+
+
+.lista-vagas {
+  list-style: none; 
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  background-color: #000000; 
+  color: white;
+  border-radius: 10px;
+  font-size: 17PX;
+}
+
+
+.item-vaga:last-child {
+  border-bottom: none; 
+}
+
+.remover-btn {
+  margin-top: 10px;
+  background-color: #565294;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remover-btn:hover {
+  background-color: #F8B55F;
+  color: #000;
+}
+
+/* TABELA DE VAGAS */
+.vaga-container {
+  justify-content: center;        
+  align-items: center;           
+  max-width: 1000px;               
+  margin: 40px auto;            
+  display: flex;                  
+  flex-wrap: wrap;                 
+  gap: 12px;                       
+  padding: 20px;                   
+  background-color: #000000;      
+  border-radius: 8px;             
+
+}
+
+.vaga-container .vaga {
+  display: flex;                   
+  justify-content: center;        
+  align-items: center;          
+  text-align: center;             
+  background-color: #565294;    
+  color: #000000;                 
+  border-radius: 8px;            
+  width: 80px;                    
+  height: 80px;                  
+  font-weight: bold;             
+}
+
+.vaga-container .vaga:hover {
+  transform: scale(1.05);        
+}
+
+.vaga.reservada {
+  background-color: #F8B55F;
+  color: #fff;            
+  cursor: not-allowed;    
 }
 
 /* RODAPÉ FIXADO */
-footer {
-  margin-top: 40px;
-  background-color: #111;
+.footer {
+  background-color: #000000; 
   color: #fff;
-  text-align: center;
-  padding: 20px 10px;
-  position: relative;
+  text-align: center; 
+  padding: 20px; 
+  position: fixed; 
   bottom: 0;
-  width: 100%;
+  left: 0;
+  width: 100%; 
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  z-index: 100;
 }

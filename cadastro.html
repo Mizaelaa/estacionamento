@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Estacionamento </title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <h1>Cadastro de Reserva de Vaga</h1>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </nav>
-  </header>
-  <form id="reservaForm">
-    <input type="text" placeholder="Placa do veículo" name="placa" required />
-    <input type="text" placeholder="Nome do proprietário" name="proprietario" required />
-    <input type="text" placeholder="Número do apartamento" name="apartamento" required />
-    <input type="text" placeholder="Bloco do apartamento" name="bloco" required />
-    <input type="text" placeholder="Modelo do veículo" name="modelo" required />
-    <input type="text" placeholder="Cor do veículo" name="cor" required />
-    <input type="text" placeholder="Número da vaga" name="vaga" required />
-    <button type="submit">Salvar</button>
-  </form>
- 
+  <nav class="navbar">
+    <a href="index.html" class="nav-home">Home</a>
+    <div class="navbar-title">Estacionamento</div>
+    <div class="button-wrapper">
+      <button onclick="location.href='cadastro.html'" class="nav-button">Cadastro vaga</button>
+      <button onclick="location.href='VagasCadastradas.html'" class="nav-button">Vagas cadastradas</button>
+      <button onclick="location.href='vagasDisponiveis.html'" class="nav-button">Vagas disponíveis</button>
+    </div>
+  </nav>
+
+  <section>
+    <form id="reservaForm">
+      <input type="text" id="placa" placeholder="Placa do veículo" name="placa" required />
+      <input type="text" id="nome" placeholder="Nome do proprietário" name="proprietario" required />
+      <input type="text" id="apartamento" placeholder="Número do apartamento" name="apartamento" required />
+      <input type="text" id="bloco" placeholder="Bloco do apartamento" name="bloco" required />
+      <input type="text" id="modelo" placeholder="Modelo do veículo" name="modelo" required />
+      <input type="text" id="cor" placeholder="Cor do veículo" name="cor" required />
+      <input type="text" id="vaga" placeholder="Número da vaga" name="vaga" required />      
+      <button type="submit">Salvar</button>
+    </form>
+  </section>
 
   <script src="script.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 Estacionamento. Todos os direitos reservados.</p>
+  </footer>
 </body>
+
 </html>
