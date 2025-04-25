@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Estacionamento Pola</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Estacionamento </title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Cadastro de Reserva de Vaga</h1>
-  <form id="reservaForm">
-    <input type="text" placeholder="Placa do veículo" name="placa" required />
-    <input type="text" placeholder="Nome do proprietário" name="proprietario" required />
-    <input type="text" placeholder="Número do apartamento" name="apartamento" required />
-    <input type="text" placeholder="Bloco do apartamento" name="bloco" required />
-    <input type="text" placeholder="Modelo do veículo" name="modelo" required />
-    <input type="text" placeholder="Cor do veículo" name="cor" required />
-    <input type="text" placeholder="Número da vaga" name="vaga" required />
-    <button type="submit">Salvar</button>
-  </form>
+  <header>
+    <h1>Estacionamento </h1>
 
-  <script src="script.js"></script>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+  </header>
+  </main>
+  <section> 
+    
+    <article class="card">
+        <button onclick="location.href='cadastro.html'">Cadastro vaga</button>
+        <button onclick="location.href='VagasCadastradas.html'">Vagas cadastradas</button>
+        <button onclick="location.href='vagasDisponiveis.html'">Vagas disponiveis</button>
+    </article>
+</section>
+</main>
 </body>
 </html>

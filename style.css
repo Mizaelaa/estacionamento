@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsl(323, 80%, 90%);
-    background-image: url("./patinho.jpg");
+    background-image: url("./servico-de-estacionamento.jpg");
     background-size: cover;          
     background-position: center;     
     background-repeat: no-repeat;   
@@ -17,7 +17,7 @@ body {
   h1 {
     text-align: center;
     color: white;
-    background-color: #e731ba;
+    background-color: #565294;
     padding: 10px 20px;
     border-radius: 10px;
     width: fit-content; /* Faz o fundo acompanhar o tamanho do texto */
@@ -41,9 +41,112 @@ body {
   }
   
   button {
-    background-color: #e731ba;
+    background-color: #565294;
     color: white;
     border: none;
     cursor: pointer;
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #fca311;
+  }
+  
+  .banner {
+    background: url('https://source.unsplash.com/1600x500/?technology') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .sobre {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  footer a {
+    color: #fca311;
+    text-decoration: none;
+  }
+  
+  /* TABELA DE VAGAS */
+#tabelaVagas {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  color: #000;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#tabelaVagas th, #tabelaVagas td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#tabelaVagas th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* RODAPÉ FIXADO */
+footer {
+  margin-top: 40px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
